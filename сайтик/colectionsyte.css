@@ -1,0 +1,125 @@
+header {
+    max-width: 1895px;
+    width: 100%;
+    height: 79px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between; /* Рівномірний розподіл */
+    align-items: center; /* Вирівнює по вертикалі */   
+}
+
+/* Логотип */
+header img {
+    width: 250px;
+    height: 80px;
+}
+
+/* Навігація */
+#header nav {
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    display: flex;
+    gap: 20px;/* відстань між елементами */
+    justify-content: center; /* Центрує посилання */
+}
+
+/* Посилання в навігації */
+#header nav a {
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* Контейнер для іконок */
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Іконки */
+.header-icons a img {
+    width: 32px;
+    height: 32px;
+}
+/* Блок про деталі */
+.details {
+    position: relative;
+    width: 100%; /* Фіксована ширина як у макеті 1440px */
+    height: 1500px; /* Фіксована висота */
+    padding-right: -2px;/* Додає внутрішні відступи */
+	padding-left: -2px;
+	align-items: center;
+    background-color:#db156d;
+}
+/* Текст */
+.title {
+    color: white;
+    font-size: 40pt;
+    font-family: "Comic Sans MS", sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+
+/* Блок про колекцію */
+.collection {
+    background-color: #00a351; /* Зелений фон */
+    padding: 50px 0;
+    text-align: center;
+	position: relative;
+    justify-content: center;  
+    align-items: center; 
+	display: flex;
+	flex-direction:column;
+}
+.container {
+          display:grid; 
+		  grid-template-columns:500px 500px;
+		  grid-template-rows:250px 250px;
+		  grid-column-gap:50px;
+          grid-row-gap:50px; 
+          justify-items:center;
+		  align-items: center;
+        }
+        .photo {
+            width: 400px;
+            height: 100%;
+            object-fit: cover;
+			border-radius: 30px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+        }
+
+/* Блок про футер */
+.footer {
+    background-color: white; /* білий фон */
+    color: black; /* чорний текст */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Рівномірно розподіляє стовпці */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 16%; /* Кожен стовпець займає 16% ширини */
+    min-width: 150px; /* Щоб не ламався на малих екранах */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+#source a {
+    text-decoration: none;
+    color: black;
+}
