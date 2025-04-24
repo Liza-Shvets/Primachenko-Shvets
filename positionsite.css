@@ -1,0 +1,380 @@
+
+header {
+    max-width: 1895px;
+    width: 100%;
+    height: 119px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between; /* Рівномірний розподіл */
+    align-items: center; /* Вирівнює по вертикалі */   
+}
+
+/* Логотип */
+header img {
+    width: 250px;
+    height: 80px;
+}
+
+/* Навігація */
+#header nav {
+    font-weight: 400;
+    font-size: 17px;
+    color: #000;
+    display: flex;
+    gap: 20px;/* відстань між елементами */
+    justify-content: center; /* Центрує посилання */
+}
+
+/* Посилання в навігації */
+#header nav a {
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* Контейнер для іконок */
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+/* Іконки */
+.header-icons a img {
+    width: 32px;
+    height: 32px;
+}
+/* Блок початковий */
+.hero {
+    position: relative;
+    width: 100%; /* Фіксована ширина як у макеті 1440px */
+    height: 1100px; /* Фіксована висота */
+    padding-right: -2px;/* Додає внутрішні відступи */
+	padding-left: -2px;
+	align-items: center;
+    background-image: url("головне%20фото.png");
+	background-position: center;
+    background-size: cover;
+}
+
+
+/* Текст */
+.title {
+    color: white;
+    font-size: 40pt;
+    font-family: "Comic Sans MS", sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Контейнер кнопок */
+.buttons {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 180px;
+}
+
+/* Кнопки */
+.btn-primary, .btn-secondary {
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: "Comic Sans MS", sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.btn-primary {
+    background: #db156d;
+    color: white;
+	padding: 15px 50px;
+}
+.btn-primary:hover{background-color: #ebbd0b;}
+.btn-primary:active{transform: scale(0.98);}
+
+.btn-secondary:hover{background-color: #ebbd0b;}
+.btn-secondary:active{transform: scale(0.98);}
+
+.btn-secondary {
+    background: #00a351;
+    color: white;
+	padding: 15px 25px;
+}
+
+/* Стрілки */
+.circle-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    position: absolute; 
+    top: 40%; 
+    z-index: 10;}
+.circle-btn img {width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);}
+.circle-btn.left {left: 125px;}
+.circle-btn.right {right: 125px; }
+
+
+
+
+/* Блок про себе */
+.about {
+    background-color: #f8d210; /* Жовтий фон */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about-container {
+    background-color: white; /* Біла фігура */
+    border-radius: 30px; /* Закруглення */
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    box-shadow: 15px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    flex: 1;
+    font-size: 16px;
+    text-align: left;
+}
+
+.about-photo img {
+    width: 400px;
+    border-radius: 20px; /* Заокруглені кути */
+}
+
+
+
+
+/* Блок про колекцію */
+.collection {
+    background-color: #00a351; /* Зелений фон */
+    padding: 50px 0;
+    text-align: center;
+	position: relative;
+}
+	
+.collection-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;}
+
+
+.collection-img-btn {
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-bottom: 10%;
+	flex: 0 1 350px;
+}
+
+.collection-img-btn img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Обрізає і масштабує картину */
+    border-radius: 30px; /* Округлення самого зображення */
+}
+
+
+
+/* Блок про пропозиції */
+.proposition {
+    background-color: #white; /* Білий фон */
+    padding: 50px 0;
+    text-align: center;
+	height: 396px;
+	margin-top: 50px;
+}
+
+.proposition-container {
+    display: flex;
+    justify-content: center; /* Центрує контент */
+    gap: 40px;/* Відстань між кнопками */
+}
+
+.proposition-img {
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    padding: 16px; /* Рамка */
+    width: 300px; /* Фіксована ширина */
+    height: 450px;
+    
+    display: flex;
+	flex: 0 1 auto;
+    flex-direction: column; /* Створює вертикальний стек */
+    justify-content: space-between; /* Розділяє зображення та текст */
+    align-items: center;
+}
+
+.proposition-img img {
+    width: 100%;
+    height: 80%; /* Щоб залишити місце для тексту */
+    object-fit: cover; /* Обрізає і масштабує картину */
+    border-radius: 30px; /* Округлення самого зображення */
+}
+
+.proposition-text {
+    font-size: 38px;
+    color: white; /* Контрастний колір */
+    text-align: center;
+    padding-top: 10px;
+	font-family: "Comic Sans MS", sans-serif;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Блок про віртуальну реальність */
+.virtual{
+	background-color: #db156d; /* рожевий фон */
+    padding: 10px 0;
+    text-align: center;
+	height: 696px;
+	margin-top: 50px;
+	position: relative;
+}
+.virtual-container {
+    display: flex;
+    justify-content: center; /* Центрує контент */
+  
+}
+.virtual-img {
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 1120px;
+    height: 435px;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+}
+
+.virtual-img img {
+    width: 100%;
+    height: 98%; 
+    object-fit: cover; /* Обрізає і масштабує картину */
+    border-radius: 30px; /* Округлення самого зображення */
+}
+
+
+
+/* Блок про форми */
+
+.subscribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+	background-color: #ebbd0b; /* Жовтий фон */
+    text-align: center;
+    height: 436px;
+}
+
+.subscribe-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 40px;
+    padding: 20px;
+    max-width: 652px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-box {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.subscribe-title {
+    font-size: 28px;
+	color: black;
+    font-family: "Comic Sans MS", sans-serif;
+    text-align: center;
+	padding: 10px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+}
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.subscribe-input {
+	font-size: 28px;
+    flex: 1;
+	padding: 8px;
+    border: 7px solid #ebbd0b;
+	font-family: "Comic Sans MS", sans-serif;
+    outline: none;
+	border-radius: 30px;
+	max-width: 268px;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.subscribe-image {
+    width: 555px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+
+
+
+/* Блок про футер */
+.footer {
+    background-color: white; /* білий фон */
+    color: black; /* чорний текст */
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Рівномірно розподіляє стовпці */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    width: 16%; /* Кожен стовпець займає 16% ширини */
+    min-width: 150px; /* Щоб не ламався на малих екранах */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+#source a {
+    text-decoration: none;
+    color: black;
+}
+/* * {outline: 1px solid red; /* Для того, щоб бачити межі всіх елементів} 
+
